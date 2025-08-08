@@ -29,7 +29,9 @@ function App() {
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
 
+  const overlayImageUrl = 'https://i.ibb.co/tpnJF7JH/Chat-GPT-Image-Aug-8-2025-02-00-46-PM.png';   
   const overlayImageUrl = 'https://i.ibb.co/tpnJF7JH/Chat-GPT-Image-Aug-8-2025-02-00-46-PM.png';
+  
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
