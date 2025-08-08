@@ -29,9 +29,7 @@ function App() {
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
 
-  const overlayImageUrl = 'https://i.ibb.co/tpnJF7JH/Chat-GPT-Image-Aug-8-2025-02-00-46-PM.png';   
-  const overlayImageUrl = 'https://i.ibb.co/tpnJF7JH/Chat-GPT-Image-Aug-8-2025-02-00-46-PM.png';
-  
+  const overlayImageUrl = 'https://i.ibb.co/tpnJF7JH/Chat-GPT-Image-Aug-8-2025-02-00-46-PM.png'; 
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -468,7 +466,7 @@ function App() {
               <span className="text-2xl font-bold text-white">AZTEC - PRIVACY PLEASE!</span>
             </div>
             <div className="text-gray-400">
-              © 2025 AZTEC - PRIVACY PLEASE!. Add the chain, make it reign - Mady by 0XHarish.
+              © 2025 AZTEC - PRIVACY PLEASE!. Add the chain, make it reign - Made by 0xHarish.
             </div>
           </div>
         </div>
