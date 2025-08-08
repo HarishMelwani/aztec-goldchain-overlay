@@ -405,37 +405,7 @@ export default function App(): JSX.Element {
                     <RotateCcw className="w-4 h-4 mr-2" />
                     Reset
                   </button>
-
-                  <button
-                    onClick={() => bumpScale(-0.1)}
-                    className="bg-gray-700 text-white font-semibold py-2 px-3 rounded"
-                    aria-label="smaller"
-                  >
-                    -
-                  </button>
-                  <button
-                    onClick={() => bumpScale(0.1)}
-                    className="bg-gray-700 text-white font-semibold py-2 px-3 rounded"
-                    aria-label="bigger"
-                  >
-                    +
-                  </button>
-
-                  <button
-                    onClick={() => bumpRotation(-15)}
-                    className="bg-gray-700 text-white font-semibold py-2 px-3 rounded"
-                    aria-label="rotate-left"
-                  >
-                    ↺
-                  </button>
-                  <button
-                    onClick={() => bumpRotation(15)}
-                    className="bg-gray-700 text-white font-semibold py-2 px-3 rounded"
-                    aria-label="rotate-right"
-                  >
-                    ↻
-                  </button>
-
+                  
                   <button
                     onClick={downloadImage}
                     className="bg-[#715ec2] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg flex items-center"
