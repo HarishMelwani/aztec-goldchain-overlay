@@ -239,7 +239,7 @@ function App() {
         
         // Download the image
         const link = document.createElement('a');
-        link.download = 'https://i.ibb.co/tpnJF7JH/Chat-GPT-Image-Aug-8-2025-02-00-46-PM.png';
+        link.download = 'aztec-gold-chain.png';
         link.href = canvas.toDataURL();
         link.click();
       };
