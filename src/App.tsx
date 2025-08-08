@@ -468,7 +468,7 @@ function App() {
               <span className="text-2xl font-bold text-white">AZTEC - PRIVACY PLEASE!</span>
             </div>
             <div className="text-gray-400">
-              © 2025 AZTEC - PRIVACY PLEASE!. Add the chain, make it reign.
+              © 2025 AZTEC - PRIVACY PLEASE!. Add the chain, make it reign - Mady by 0XHarish.
             </div>
           </div>
         </div>
