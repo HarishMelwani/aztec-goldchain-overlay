@@ -18,6 +18,7 @@ function App() {
     rotation: 0,
     opacity: 0.9
   });
+  const canvasRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [isResizing, setIsResizing] = useState(false);
   const [isRotating, setIsRotating] = useState(false);
@@ -207,16 +208,19 @@ function App() {
   }, [isDragging, isResizing, isRotating, handleMouseMove, handleTouchMove, handleMouseUp]);
 
   const downloadImage = () => {
-    if (!canvasRef.current || !uploadedImage) return;
+  const canvas = canvasRef.current;
+  if (!canvas) {
+    console.error('Canvas not found');
+    return;
+  }
 
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    const img = new Image();
-    img.onload = () => {
-      canvas.width = img.width;
-      canvas.height = img.height;
+  const link = document.createElement('a');
+  link.download = 'aztec-gold-chain.png';
+  link.href = canvas.toDataURL('image/png');
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
       
       // Draw the uploaded image
       ctx.drawImage(img, 0, 0);
@@ -290,6 +294,7 @@ function App() {
         </div>
 
         <div className="max-w-4xl mx-auto">
+          <canvas ref={canvasRef} style={{ display: 'none' }} />
           {/* Upload Section */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 mb-8">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
