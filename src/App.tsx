@@ -362,15 +362,15 @@ function App() {
                   {/* Upload New Image Button */}
                   <button
                     onClick={() => fileInputRef.current?.click()}
-                    className="absolute top-4 right-4 bg-[#715ec2] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg transition-colors flex items-center z-20"
+                    className="absolute top-2 right-2 bg-[#715ec2] hover:bg-purple-200 text-white font-bold py-1 px-2 rounded-lg transition-colors flex items-center z-20"
                   >
-                    <Upload className="w-4 h-4 mr-2" />
+                    <Upload className="w-2 h-2 mr-1" />
                     New Image
                   </button>
                 </div>
               ) : (
                 <div 
-                  className="cursor-pointer hover:border-purple-400 transition-colors"
+                  className="cursor-pointer hover:border-purple-200 transition-colors"
                   onClick={() => fileInputRef.current?.click()}
                 >
                   <Upload className="w-16 h-16 text-[#715ec2] mx-auto mb-4" />
